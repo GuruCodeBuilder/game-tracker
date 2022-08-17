@@ -1,0 +1,100 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+}
+
+body {
+    background-image: url(soccer_image.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-5%);
+    color: white;
+    position: relative;
+    max-width: 50%;
+    transform: translateX(50%);
+}
+
+.container>div {
+    flex-basis: calc(100% / 2.5);
+}
+
+.score-container {
+    background: #1B244A;
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid black;
+}
+
+.home {
+    border-radius: 5px 0 0 5px;
+    border-right: transparent;
+}
+
+.guest {
+    border-radius: 0 5px 5px 0;
+    border-left: transparent;
+}
+
+.team-name {
+    display: inline-block;
+    color: white;
+    /* border: 2px solid red; */
+}
+
+.score {
+    margin: 2% 0 5%;
+    padding: 5% 1%;
+    width: 40%;
+    font-family: Timer;
+    font-size: 5rem;
+    color: #F94F6D;
+    background: black;
+    border-radius: 5px;
+}
+
+button {
+    font-family: Timer;
+    font-size: 1rem;
+    width: 45px;
+    height: 45px;
+    color: black;
+    background: transparent;
+    border-radius: 5px;
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+}
+
+.clear {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clear-btn {
+    width: 100px;
+    border: 2px solid coral;
+    color: coral;
+}
+
+@font-face {
+    font-family: Timer;
+    src: url(CursedTimerUlil-Aznm.ttf)
+}
